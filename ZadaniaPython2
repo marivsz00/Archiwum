@@ -1,0 +1,45 @@
+2.1
+Napisz program, który wypisze na ekranie malejąco wszystkie liczby od 20 do 10 za pomocą pętli for.
+2.2
+Napisz pętlę while, która wypisze na ekranie wszystkie liczby od 10 do 20 włącznie.
+2.3
+Napisz program, który wypisze na ekranie wszystkie liczby nieparzyste od -10 do 40 za pomocą pętli for.
+2.4
+Napisz program, który wypisze na ekranie wszystkie liczby nieparzyste od -10 do 40 za pomocą pętli while.
+2.5
+Stwórz pętle for używając liczb z przedziału od 1 do 1000 włącznie. Wypisz liczby, które są podzielne zarówno przez 3 jak i przez 5, a następnie ich sumę.
+2.6
+Napisz pętle, która wyświetli kolejne wyrazy ciągu 1,2,4,8,16,32,64 itd. Wszystkie mniejsze niż 1000.
+2.7
+Napisz program, w którym parametrem jest liczba całkowita dodatnia, program wyświetla na ekranie kolejno wszystkie liczby niepatrzyste nie większe od podanej liczby.
+
+Przykład, dla podanej liczby 10, program powinien wyświetlić 1, 3, 5, 7 i 9.
+
+2.8
+Napisać program, w którym parametrem jest liczba całkowita dodatnia, program wyświetla na ekranie wszystkie potęgi liczby 2 niewiększe, niż podana liczba.
+
+Przykładowo, dla liczby 20 program powinien wyświetlić: 2, 4, 8 i 16.
+2.9
+Napisz program, który wypisze liczby od 1 do 100. W środku pętli umieść warunek, że jeśli iterator będzie równy 23, opuść pętlę za pomocą instrukcji break.
+2.10
+Napisz program, który pobiera od użytkownika liczbę i wyświetla jej dzielniki. Przykładowo, dla liczby 21 dzielniki to: 1, 3, 7, 21.
+2.11
+Napisz program, który dla wczytanej z klawiatury liczby naturalnej wypisuje jej rozkład na czynniki pierwsze. Zorganizuj wyświetlanie tak, by program jako wynik działania wypisywał linijkę postaci np.
+
+120=22235
+
+35=5*7
+2.12
+Napisz program, który dla wczytanej z klawiatury liczby naturalnej wypisuje sumę nieparzystych cyfr tej liczby.
+2.13
+Napisz program, który dla wczytanej z klawiatury liczby naturalnej wypisuje ilość cyfr tej liczby.
+2.14
+Napisz program, który dla wczytanej z klawiatury liczby naturalnej n sprawdza, czy liczba ta jest pierwsza.
+2.15
+Napisz program, który drukuje na ekranie zadaną liczbę zastępując jej kolejne cyfry ich kwadratami. (Dla liczby 127 drukujemy 49 4 1.)
+2.16
+Napisz program, który dla wczytanej z klawiatury liczby naturalnej n sprawdza, czy liczba ta jest pierwsza.
+2.17
+Napisz program, który sprawdza czy więcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
+2.18
+Napisz program, który wczytuje z klawiatury liczbę całkowitą i wyświetla ją w odwrotnej kolejności. (Nie używaj stringa w tym zadaniu.)
