@@ -1,0 +1,34 @@
+2.1
+x = 19
+for i in range(0, 20):
+    print(x)
+    x = x - 1
+    if x == 10:
+        break
+2.2
+x = 10
+while x <= 20:
+    print(x)
+    x = x+1
+    
+2.3
+
+# Napisz program, który wypisze na ekranie wszystkie liczby nieparzyste od -10 do 40 za pomocą pętli for.
+x = -10
+for i in range(-10, 40):
+    print(x)
+    x = x+2
+    if x == 40:
+        break
+    
+2.4
+
+# Napisz program, który wypisze na ekranie wszystkie liczby nieparzyste od -10 do 40 za pomocą pętli while.
+x = -10
+
+while x <= 40:
+    if x % 2 != 0:
+        print(x)
+    x = x+1
+    
+2.5
