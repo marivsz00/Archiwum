@@ -1,0 +1,124 @@
+
+import os
+
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
+
+
+
+
+
+def wiezehanoi():
+    zasadygry = "Przenieś wszystkie elementy z pręta lewego na środkowy.\n" \
+                " Możesz podnieś tylko 1 krążek – ten z wierzchu.\n" \
+                " Nie można położyć krążka większego na krążku mniejszym."
+    print(zasadygry)
+
+    liczbakrazkow = int(input("\nWprowadz liczbe krazkow: "))
+    miejsce_a = []
+    miejsce_b = []
+    miejsce_c = []
+    wygrana = []
+    # tworzenie listy z krazkami
+    for i in range(1,liczbakrazkow+1):
+        miejsce_a.append(i)
+        wygrana.append(i)
+    # print(miejsce_a)
+    # print(wygrana)
+    # print("ss")
+#     teraz na pierwszym miejscu znajduja sie wszystkie krazki
+
+    print("A: ", miejsce_a)
+    print("B: ", miejsce_b)
+    print("C: ", miejsce_c)
+
+    while wygrana!= miejsce_b:
+        # print(miejsce_b)
+        # print(wygrana)
+
+        wyborprzesuniecia = int(input("Wpisz z ktorego miejsca chcesz przeniesc krazek: "))
+
+        if wyborprzesuniecia == 1:
+            try:
+                n = miejsce_a[0]
+                miejsce_a.pop(0)
+
+                miejscedocelowe = int(input("Wpisz w ktore miejsce chcesz przeniesc krazek: "))
+            except:
+                print("Miejsce jest puste!")
+                continue
+        elif wyborprzesuniecia == 2:
+            try:
+                n = miejsce_b[0]
+                miejsce_b.pop(0)
+                miejscedocelowe = int(input("Wpisz w ktore miejsce chcesz przeniesc krazek: "))
+            except:
+                print("Miejsce jest puste!")
+                continue
+        elif wyborprzesuniecia == 3:
+            try:
+                n = miejsce_c[0]
+                miejsce_c.pop(0)
+                miejscedocelowe = int(input("Wpisz w ktore miejsce chcesz przeniesc krazek: "))
+            except:
+                print("Miejsce jest puste!")
+                continue
+        else :
+            print("Wprowadz wartosc 1-3")
+            # [1,2,3,4,5]
+
+        if miejscedocelowe == 1:
+            try:
+                if miejsce_a[0] > n:
+                    miejsce_a.insert(0,n)
+                    print("A: ", miejsce_a)
+                    print("B: ", miejsce_b)
+                    print("C: ", miejsce_c)
+                else:
+                    print("Nie można położyć krążka większego na krążku mniejszym")
+            except:
+                miejsce_a.insert(0, n)
+                print("A: ", miejsce_a)
+                print("B: ", miejsce_b)
+                print("C: ", miejsce_c)
+        if miejscedocelowe == 2:
+            try:
+                if miejsce_b[0] > n:
+                    miejsce_b.insert(0, n)
+                    print("A: ", miejsce_a)
+                    print("B: ", miejsce_b)
+                    print("C: ", miejsce_c)
+                else:
+                    print("Nie można położyć krążka większego na krążku mniejszym")
+            except:
+                miejsce_b.insert(0, n)
+
+                print("A: ", miejsce_a)
+                print("B: ", miejsce_b)
+                print("C: ", miejsce_c)
+        if miejscedocelowe == 3:
+            try:
+                if miejsce_c[0] > n:
+
+                    miejsce_c.insert(0, n)
+
+                    print("A: ", miejsce_a)
+                    print("B: ", miejsce_b)
+                    print("C: ", miejsce_c)
+                else:
+                    print("Nie można położyć krążka większego na krążku mniejszym")
+            except:
+                miejsce_c.insert(0, n)
+
+                print("A: ", miejsce_a)
+                print("B: ", miejsce_b)
+                print("C: ", miejsce_c)
+    clearConsole()
+    # print("Udało Ci się!")
+wiezehanoi()
+
+print("Udało Ci się!")
+input("Nacisnij enter aby wyjsc ;)")
