@@ -1,0 +1,26 @@
+from math import ceil
+x = int(input("Wprowadz liczbe do sprawdzenia: "))
+l=[]
+n=ceil(x/2)
+def rozklad(x):
+    if x<= 0:
+        print("Wprowadz liczbe wieksza od 0")
+    else:
+        k=1
+        while k<n+1:
+            if x % k ==0:
+                l.append(k)
+                print(k,x)
+                k += 1
+            else:
+                k+=1
+    print(l)
+    suma=0
+    for i in range(0,len(l)):
+        suma+=l[i]
+    print(suma)
+    if suma == x:
+        print("Podana liczba jest liczba doskonala")
+    else:
+        print("Podana liczba nie jest liczba doskonala")
+rozklad(x)
