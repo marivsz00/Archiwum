@@ -1,0 +1,17 @@
+kraje = dict()
+with open('galerie.txt') as plik:
+    for line in plik:
+        line.rsplit()
+        s = line.split()
+        # print(s[0])
+        if s[0] in kraje:
+            kraje[s[0]] += 1
+        else:
+            kraje[s[0]] = 1
+
+# print(kraje)
+
+with open('wynik4_1.txt', 'a') as wynik:
+    wynik.write('Zadanie 4.1' + '\n')
+    for x in kraje:
+        wynik.write(x + " " + str(kraje[x]) + '\n')
