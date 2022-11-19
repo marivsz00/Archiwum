@@ -1,0 +1,47 @@
+// Stwórz program który wyświetla przykładowe dane Użytkownika, następnie pyta czy dane nadpisać czy nie. 
+// Jeśli użytkownik wybierze opcję nadpisania system przyjmuje nowe dane i wyświetla je. 
+// Jeśli użytkownik wybierze opcję nie nadpisywania system wyświetla komunikat „Dane nie zostały zmienione”.
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+    string imie,nazwisko;
+    int wiek,decyzja;
+
+    imie = "John";
+    nazwisko = "Colt";
+    char zawod[100] = "Audio Engineer";
+    wiek = 20;
+
+    cout << "Dane użytkownika:" << endl;
+    cout << "Imie: " << imie << "\nNazwisko: " << nazwisko << "\nZawod: " << zawod << "\nWiek: " << wiek << endl;
+    cout << "\n=================\n" << endl;
+    cout << "Czy chcesz nadpisać dane? TAK - 1, NIE - 0" << endl;
+    
+    cin >> decyzja;
+
+    if (decyzja == 1) {
+
+        cout << "Podaj nowe imie: " << endl;
+        cin >> imie;
+        cout << "Podaj nowe nazwisko: " << endl;
+        cin >> nazwisko;
+        cout << "Podaj nowy zawod: " << endl;
+        cin.ignore();
+        cin.getline(zawod, 100);
+        cout << "Podaj nowy wiek: " << endl;
+        cin >> wiek;
+
+
+        cout << "Nowe dane użytkownika:" << endl;
+        cout << "Imie: " << imie << "\nNazwisko: " << nazwisko << "\nZawod: " << zawod << "\nWiek: " << wiek << endl;
+        cout << "\n=================\n" << endl;
+        cout << "Czy chcesz nadpisać dane? TAK - 1, NIE - 0" << endl;
+    
+    } else {cout << "Dane nie zostały zmienione." << endl;}
+        
+
+}
+    
