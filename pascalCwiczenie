@@ -163,3 +163,32 @@ begin
   writeln('Minimalna wartosc wynosi: ', min);
   writeln('Maksymalna wartosc wynosi: ', max);
 end.
+*****************************************************************************
+program siodme;
+
+ 
+var
+  tablica: array[1..10] of integer;
+  i,poszukiwanaLiczba: integer;
+
+begin
+	writeln("Podaj 10 liczb: ");
+	
+	for i := 1 to 10 do
+    	read(tablica[i]);
+    	
+	writeln("Podaj poszukiwana liczbe: ");
+	read(poszukiwanaLiczba);
+	
+  for i := 1 to 10 do
+  begin
+
+    if (tablica[i] = poszukiwanaLiczba) then
+      writeln('Pozycja poszukiwanej liczby wynosi: ', i);
+
+  end;
+
+  
+  
+end.
+*****************************************************************
