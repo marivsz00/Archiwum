@@ -1,4 +1,4 @@
-program ideone;
+program pierwsze;
  
  
 var
@@ -19,7 +19,7 @@ begin
   end;
 end.
 *****************************************
-program ideone;
+program drugie;
 
 var
   imiona: array[1..10] of string;
@@ -38,7 +38,7 @@ begin
   end;
 end.
 ************************************************
-program ideone;
+program trzecie;
 
  
 var
@@ -60,7 +60,7 @@ begin
   write(suma);
 end.
 ************************************************
-program ideone;
+program czwarte;
 
 
 
