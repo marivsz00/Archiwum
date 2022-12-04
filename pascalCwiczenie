@@ -192,3 +192,24 @@ begin
   
 end.
 *****************************************************************
+program osme;
+var
+  imiona: array[1..10] of string;
+  i: integer;
+
+begin
+  
+  for i := 1 to 10 do
+  begin
+    readln(imiona[i]);
+  end;
+
+  for i := 1 to 10 do
+  begin
+  
+    if imiona[i][Length(imiona[i])] = 'a' then
+    begin
+      writeln(imiona[i]);
+    end;
+  end;
+end.
