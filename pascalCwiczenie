@@ -1,0 +1,95 @@
+program ideone;
+ 
+ 
+var
+  tablica: array[1..10] of integer;
+  i: integer;
+ 
+begin
+ 
+  for i := 1 to 10 do
+  begin
+    tablica[i] := i;
+  end;
+ 
+ 
+  for i := 1 to 10 do
+  begin
+    writeln(tablica[i]);
+  end;
+end.
+*****************************************
+program ideone;
+
+var
+  imiona: array[1..10] of string;
+  i: integer;
+
+begin
+  
+  for i := 1 to 10 do
+  begin
+    readln(imiona[i]);
+  end;
+
+  for i := 10 downto 1 do
+  begin
+    writeln(imiona[i]);
+  end;
+end.
+************************************************
+program ideone;
+
+ 
+var
+  tablica: array[1..10] of integer;
+  i: integer;
+  suma:integer:=0;
+begin
+ 
+  for i := 1 to 10 do
+  begin
+    tablica[i] := i;
+  end;
+ 
+ 
+  for i := 1 to 10 do
+  begin
+   suma:=suma+tablica[i];
+  end;
+  write(suma);
+end.
+************************************************
+program ideone;
+
+
+
+var
+  tablica: array[1..3, 1..4] of integer;
+  i, j: integer;
+  suma: integer;
+
+begin
+
+  for i := 1 to 3 do
+  begin
+    for j := 1 to 4 do
+    begin
+      tablica[i, j] := i * j;
+    end;
+  end;
+
+  suma := 0;
+  for i := 1 to 3 do
+  begin
+    for j := 1 to 4 do
+    begin
+    	write(tablica[i,j],' ');		
+    	suma := suma + tablica[i, j];
+    end;
+    	writeln;
+  end;
+
+  writeln('Suma: ', suma);
+end.
+
