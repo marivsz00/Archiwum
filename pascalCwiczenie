@@ -92,4 +92,74 @@ begin
 
   writeln('Suma: ', suma);
 end.
+*************************************************************
+(*Napisz tablice dwuwymiarową 3x4. 
+Program ma podać sumę wszystkich liczb parzystych zawartych w tablicy.*)
 
+
+program piate;
+
+var
+  tablica: array[1..3, 1..4] of integer;
+  i, j: integer;
+  suma: integer;
+
+begin
+
+  for i := 1 to 3 do
+  begin
+    for j := 1 to 4 do
+    begin
+      tablica[i, j] := i * j;
+    end;
+  end;
+
+  suma := 0;
+  for i := 1 to 3 do
+  begin
+    for j := 1 to 4 do
+    begin
+    	write(tablica[i,j],' ');
+    	if(tablica[i,j] mod 2 = 0) then
+    	begin
+    		suma := suma + tablica[i, j];
+    	end;
+    end;
+    	writeln;
+  end;
+
+  writeln('Suma: ', suma);
+end.
+**********************************************************
+
+(*Napisz program wczytujący do tablicy 10 liczb. 
+Program ma wypisać najmniejszą i największą liczbę w tablicy.*)
+
+program szoste;
+
+ 
+var
+  tablica: array[1..10] of integer;
+  i,min,max: integer;
+
+begin
+
+	for i := 1 to 10 do
+    	read(tablica[i]);
+	
+  min := tablica[1];
+  max := tablica[1];
+
+  for i := 2 to 10 do
+  begin
+
+    if tablica[i] < min then
+      min := tablica[i];
+
+    if tablica[i] > max then
+      max := tablica[i];
+  end;
+
+  writeln('Minimalna wartosc wynosi: ', min);
+  writeln('Maksymalna wartosc wynosi: ', max);
+end.
