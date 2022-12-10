@@ -1,0 +1,54 @@
+program zadaniedrugie;
+const
+  X = 5;
+  Y = 5;
+
+var
+  dwuwymiarowa: array[1..X, 1..Y] of Integer;
+  jednowymiarowa: array[1..X*Y] of Integer;
+  i, j, k: Integer;
+
+begin
+
+  Randomize;
+  for i := 1 to X do
+  begin
+    for j := 1 to Y do
+    begin
+      dwuwymiarowa[i, j] := Random(100);
+    end;
+  end;
+
+  WriteLn('Tablica dwuwymiarowa: ');
+  for i := 1 to X do
+  begin
+    for j := 1 to Y do
+    begin
+      Write(dwuwymiarowa[i, j], ' ');
+    end;
+    WriteLn(" ");
+  end;
+  
+  WriteLn(" ");
+  
+  k := 0;
+  for i := 1 to X do
+  begin
+    for j := 1 to Y do
+    begin
+      if dwuwymiarowa[i, j] mod 2 = 0 then
+      begin
+        k := k + 1;
+        jednowymiarowa[k] := dwuwymiarowa[i, j];
+      end;
+    end;
+  end;
+
+
+  WriteLn('Tablica jednowym. z liczbami parzystymi:');
+  for i := 1 to k do
+  begin
+    Write(jednowymiarowa[i], ' ');
+  end;
+  WriteLn(" ");
+end.
