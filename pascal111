@@ -1,0 +1,36 @@
+const
+  wielkoscTablicy = 10;
+
+var
+  tablica1: array[1..wielkoscTablicy] of Integer;
+  tablica2: array[1..wielkoscTablicy] of Integer;
+  i: Integer;
+
+begin
+
+  Randomize;
+  for i := 1 to wielkoscTablicy do
+  begin
+    tablica1[i] := Random(100);
+  end;
+
+  Write('Tablica przed: ');
+  for i := 1 to wielkoscTablicy do
+  begin
+    Write(tablica1[i], ' ');
+  end;
+  WriteLn(" ");
+
+ 
+  for i := 1 to wielkoscTablicy do
+  begin
+    tablica2[i] := tablica1[wielkoscTablicy - i + 1];
+  end;
+
+  Write('Tablica po: ');
+  for i := 1 to wielkoscTablicy do
+  begin
+    Write(tablica2[i], ' ');
+  end;
+  WriteLn(" ");
+end.
